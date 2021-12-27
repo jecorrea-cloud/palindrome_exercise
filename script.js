@@ -23,5 +23,5 @@
 
 function palindrome(string) {
   for (let i = 0; i < string.length; i++)
-    console.log(string[i] !== string[string.length - 1 - i] ? false : true);
+    return string[i] !== string[string.length - 1 - i] ? false : true;
 }
