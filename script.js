@@ -14,9 +14,14 @@
 //   return ans;
 // }
 
+// function palindrome(string) {
+//   for (let i = 0; i < string.length; i++) {
+//     let ans = string[i] !== string[string.length - 1 - i] ? false : true;
+//     return ans;
+//   }
+// }
+
 function palindrome(string) {
-  for (let i = 0; i < string.length; i++) {
-    let ans = string[i] !== string[string.length - 1 - i] ? false : true;
-    return ans;
-  }
+  for (let i = 0; i < string.length; i++)
+    console.log(string[i] !== string[string.length - 1 - i] ? false : true);
 }
