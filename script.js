@@ -21,7 +21,7 @@
 //   }
 // }
 
-function palindrome(string, i = 0) {
+function isPalindrome(string, i = 0) {
   // O(n) time | O(n) space
   const j = string.length - 1 - i;
   return i >= j ? true : string[i] === string[j] && isPalindrome(string, i + 1);
