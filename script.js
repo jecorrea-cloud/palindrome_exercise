@@ -21,7 +21,8 @@
 //   }
 // }
 
-function palindrome(string) {
-  for (let i = 0; i < string.length; i++)
-    return string[i] !== string[string.length - 1 - i] ? false : true;
+function palindrome(string, i = 0) {
+  // O(n) time | O(n) space
+  const j = string.length - 1 - i;
+  return i >= j ? true : string[i] === string[j] && isPalindrome(string, i + 1);
 }
